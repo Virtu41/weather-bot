@@ -16,7 +16,7 @@ GUILD = os.getenv('GUILD')
 WEATHERKEY = os.getenv('WEATHERKEY')
 CHANNEL = 0 #change channel number
 
-client = commands.Bot(command_prefix = '?',case_insensitive=True,intents=intents) # command starts with '!'
+client = commands.Bot(command_prefix = '?',case_insensitive=True,intents=intents) # command starts with '?'
 channel = client.get_channel(CHANNEL) # specify which channel to use for some outputs
 
 url = "https://weatherapi-com.p.rapidapi.com/current.json"
